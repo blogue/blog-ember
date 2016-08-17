@@ -1,0 +1,10 @@
+<h2>Edit Post</h2>
+<form>
+  {{input value=title id="title" placeholder=post.title}}
+  {{input value=author id="author" placeholder=post.author}}
+  {{input value=content id="content" placeholder=post.content}}
+  {{input value=date id="date" placeholder=post.date}}
+  {{input value=category id="category" placeholder=post.category.id}}
+  {{input value=tags id="tags" placeholder=post.tags}}
+  <button {{action "update" post}}>Save</button>
+</form>

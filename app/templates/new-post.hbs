@@ -1,0 +1,14 @@
+<h2>New Post</h2>
+<form>
+  {{input value=title id="title"}}
+  {{input value=author id="author"}}
+  {{input value=content id="content"}}
+  {{input value=date id="date"}}
+  {{input value=category id="category"}}
+  <!-- <select id="category" onchange={{action "updateCategory" value="target.value"}}>
+    <option value="0">Uncategorized</option>
+    <option value="1">Puppies</option>
+  </select> -->
+  {{input value=tags id="tags"}}
+  <button {{action "save"}}>Save</button>
+</form>

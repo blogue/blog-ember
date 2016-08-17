@@ -1,0 +1,8 @@
+{{#each posts as |post|}}
+  <ul>
+  <!-- {{#if (eq post.category model.currentCategory)}} -->
+    <li>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
+  <!-- {{/if}} -->
+  </ul>
+{{/each}}
+<button {{action "change"}}>Change</button>
