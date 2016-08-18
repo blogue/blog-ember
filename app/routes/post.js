@@ -2,12 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    this.store.findRecord('post', params.post_id).then(function(val) {
-      val.get("tags").forEach(function(tp) {
-        console.log(tp);
-      });
-      debugger;
-    });
     return this.store.findRecord('post', params.post_id);
   },
   actions: {

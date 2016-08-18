@@ -2,13 +2,12 @@
 <form>
   {{input value=title id="title"}}
   {{input value=author id="author"}}
-  {{input value=content id="content"}}
+  {{input value=postContent id="postContent"}}
   {{input value=date id="date"}}
-  {{input value=category id="category"}}
-  <!-- <select id="category" onchange={{action "updateCategory" value="target.value"}}>
-    <option value="0">Uncategorized</option>
-    <option value="1">Puppies</option>
-  </select> -->
+  {{#each model.categories as |category|}}
+    {{radio-button value=category.id checked=selectedCategory}} {{category.name}}
+  {{/each}}
+  <p>{{multiselect-checkboxes options=model.allTags labelProperty="name" selection=model.modelSelectedTags}}</p>
   {{input value=tags id="tags"}}
   <button {{action "save"}}>Save</button>
 </form>

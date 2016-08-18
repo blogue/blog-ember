@@ -1,10 +1,16 @@
 { "posts": [],
-  "categories": [{
-    "name": "UNCATEGORIZED"
-  }],
-  "tags": [{
-    "name": "Puppies"
-  }],
+  "categories": [
+    {"name": "UNCATEGORIZED"},
+    {"name": "Animal Behavior"},
+    {"name": "Pets"},
+    {"name": "Pictures"}
+  ],
+  "tags": [
+    {"name": "Puppies"},
+    {"name": "Kitties"},
+    {"name": "Lizards"},
+    {"name": "Turtles"}
+  ],
   "comments": [],
   "tag-posts": []
 }

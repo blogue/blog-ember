@@ -5,7 +5,7 @@
   {{model.content}}
 </p>
 <hr>
-<p>Posted in: {{model.category.name}} | Tagged: {{#each model.tags as |tag-post|}}{{tag-post.tag.name}}{{/each}}</p>
+<p>Posted in: {{model.category.name}} | Tagged: {{tag-list post=model}}</p>
 {{update-post post=model update="update"}}
 <button {{action "delete" model}}>Delete</button>
 {{new-comment post=model saveComment="saveComment"}}
