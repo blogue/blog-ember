@@ -6,5 +6,6 @@ export default DS.Model.extend({
   content: DS.attr(),
   date: DS.attr(),
   category: DS.belongsTo('category', {async: true}),
-  tags: DS.attr()
+  tags: DS.hasMany('tag-post', {async: true}),
+  comments: DS.hasMany('comment', {async: true})
 });

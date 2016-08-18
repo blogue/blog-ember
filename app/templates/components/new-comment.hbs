@@ -1,0 +1,8 @@
+<h4>Post a Comment</h4>
+<form>
+  <label for="username">Username:</label>
+  {{input value=username id="username"}}
+  <label for="text">Comment:</label>
+  {{input value=text id="text"}}
+  <button {{action "save"}}>Post</button>
+</form>

@@ -1,10 +1,12 @@
 <h1>{{model.title}}</h1>
-<p>{{model.date}}</p>
+<p>Posted by {{model.author}} on {{model.date}}</p>
 <hr>
 <p>
   {{model.content}}
 </p>
 <hr>
-<p>Posted in: {{model.category.name}} | Tagged: {{model.tags}}</p>
+<p>Posted in: {{model.category.name}} | Tagged: {{#each model.tags as |tag-post|}}{{tag-post.tag.name}}{{/each}}</p>
 {{update-post post=model update="update"}}
-<button {{action "deletePost" model}}>Delete</button>
+<button {{action "delete" model}}>Delete</button>
+{{new-comment post=model saveComment="saveComment"}}
+{{comment-list post=model update="update" deleteComment="delete"}}

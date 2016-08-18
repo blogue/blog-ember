@@ -1,0 +1,6 @@
+<h2>Edit Comment</h2>
+<form>
+  {{input value=text class="update-text" placeholder=text}}
+  <button {{action "update" comment}}>Edit</button>
+  <button {{action 'delete' comment}}>Delete</button>
+</form>

@@ -1,14 +1,10 @@
-{ "posts": [{
-    "title": "TOLERANCE TROUBLES",
-    "author": "Scott Alexander",
-    "content": "Everyone knows about tolerance.",
-    "date": "2016-10-15",
-    "category": "UNCATEGORIZED",
-    "tags": "PSYCHIATRY"
-  }],
+{ "posts": [],
   "categories": [{
-    "name": "Uncategorized"
-    }, {
+    "name": "UNCATEGORIZED"
+  }],
+  "tags": [{
     "name": "Puppies"
-  }]
+  }],
+  "comments": [],
+  "tag-posts": []
 }

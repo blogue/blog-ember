@@ -1,0 +1,7 @@
+<ul>
+  {{#each post.comments as |comment|}}
+    <li>{{comment.user}} {{comment.time}}</li>
+    <ul><li>{{comment.text}}</li></ul>
+    {{update-comment comment=comment update="update" delete="delete"}}
+  {{/each}}
+</ul>
